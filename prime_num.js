@@ -1,14 +1,17 @@
-let num=45; 
-let flag=0;
-for(let i=2; i<=num/2; i++)
-{
-	
-	
-}
+let num=45;
 
-	if(flag==0){
-    console.log("prime");
+let count =0;
+
+for(let i=0; i<=num; i++)
+{
+	if(num%i==0)
+	{
+		count++;
 	}
-	else{
-		console.log("Not prime");
-	}
+}
+if(count==2)
+{
+	console.log("prime");
+} else{
+	console.log("not a prime number");
+}
